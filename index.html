@@ -4,8 +4,11 @@
 	<meta charset="utf-8" />
 	<title>Nuevo Trollyota Corlola</title>
 	<link rel="stylesheet" href="normalize.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="estilos.css" />
 	<script src="prefixfree.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="codiguito.js"></script>
 </head>
 <body>
 	<header>
@@ -32,12 +35,45 @@
 				</ul>
 			</figcaption>
 		</figure>
+		<section id="personalizacion">
+			<article id="color">
+				<h2>Selecciona un color</h2>
+				<div id="amarillo">&nbsp;</div>
+				<div id="azul">&nbsp;</div>
+				<div id="blanco">&nbsp;</div>
+				<div id="negro">&nbsp;</div>
+				<div id="rojo">&nbsp;</div>
+				<div id="verde">&nbsp;</div>
+			</article>
+			<article id="cauchos">
+				<h2>¿Qué tipo de cauchos quieres?</h2>
+				<figure id="caucho1">
+					<img src="llanta1.png" />
+					<figcaption>Baratos</figcaption>
+				</figure>
+				<figure id="caucho2">
+					<img src="llanta2.png" />
+					<figcaption>Caros</figcaption>
+				</figure>
+			</article>
+			<article id="techo">
+				<h2>Tipo de techo</h2>
+				<figure id="techo1">
+					<img src="techo1.png" />
+					<figcaption>Transparente</figcaption>
+				</figure>
+				<figure id="techo2">
+					<img src="techo2.png" />
+					<figcaption>Opaco</figcaption>
+				</figure>
+			</article>
+		</section>
 	</section>
 	<nav>
 		<ul>
-			<li><a href="">Personalizar</a></li>
-			<li><a href="">Comprar</a></li>
-			<li><a href="">Contacto</a></li>
+			<li><a href="#" id="personalizar">Personalizar</a></li>
+			<li><a href="#">Comprar</a></li>
+			<li><a href="#">Contacto</a></li>
 		</ul>
 	</nav>
 </body>

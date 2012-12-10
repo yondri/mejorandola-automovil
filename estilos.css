@@ -1,14 +1,25 @@
+@font-face {
+    font-family: 'HominisNormal';
+    src: url('HOMINIS-webfont.eot');
+    src: url('HOMINIS-webfont.eot?#iefix') format('embedded-opentype'),
+         url('HOMINIS-webfont.woff') format('woff'),
+         url('HOMINIS-webfont.ttf') format('truetype'),
+         url('HOMINIS-webfont.svg#HominisNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body
 {
 	background: #222;
 	color: #EEE;
-	font-family: Arial;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	text-align: center;
 }
 header
 {
-	background: url("logo.png") no-repeat 75% center,
+	background: url("logo.png") no-repeat 90% center,
 				url("fondo.jpg");
 	background-size: 160px, 100%;
 	margin: 0 0 1em 0;
@@ -17,6 +28,8 @@ header
 }
 header h1
 {
+	font-family: "HominisNormal";
+	font-size: 3em;
 	margin: 0;
 	text-shadow: rgba(255, 255, 255, 0.5) 5px 5px 10px;
 }
@@ -76,10 +89,12 @@ nav ul li a:hover
 }
 #cochecito figure
 {
+	border-radius: 0.5em;
 	margin: 1em;
 }
 #cochecito img
 {
+	border-radius: 0.5em;
 	width: 100%;
 }
 #cochecito, #historia
@@ -96,4 +111,95 @@ nav ul li a:hover
 	padding: 1em;
 	text-align: left;
 	width: 40%;
+}
+#personalizacion
+{
+	background: rgba(0,0,0,0.8);
+	border-radius: 0.5em;
+	box-shadow: rgba(255,255,255,0.4) 5px 5px 10px inset;
+	display: inline-block;
+	height: 0;
+	margin: 0 0 6em 2%;
+	opacity: 0;
+	overflow: hidden;
+	padding: 1em 1em 0;
+	transition: all 0.5s ease;
+	vertical-align: top;
+	width: 0%
+
+}
+#personalizacion article
+{
+	background: rgba(255,255,255,0.9);
+	border-radius: 0.5em;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	color: #333;
+}
+#personalizacion h2
+{
+	margin-top: 0;
+}
+#personalizacion #color div
+{
+	border: solid 3px #CCC;
+	cursor: pointer;
+	display: inline-block;
+	height: 3em;
+	margin: 0.5em 1%;
+	opacity: 0.7;
+	transition: all 0.5s ease;
+	vertical-align: top;
+	width: 27%;
+}
+#personalizacion #color div:hover
+{
+	border: 4px solid black;
+	opacity: 1;
+	transform: scale(1.1);
+}
+#personalizacion #color #amarillo
+{
+	background: #EEA024;
+}
+#personalizacion #color #azul
+{
+	background: #166CEB;
+}
+#personalizacion #color #blanco
+{
+	background: #DCDCDC;
+}
+#personalizacion #color #negro
+{
+	background: #121212;
+}
+#personalizacion #color #rojo
+{
+	background: #9F001C;
+}
+#personalizacion #color #verde
+{
+	background: #01C643;
+}
+#personalizacion #cauchos figure,
+#personalizacion #techo figure
+{
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 1em;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 2% 1em;
+	padding: 1%;
+	vertical-align: top;
+	width: 40%;
+}
+#personalizacion #cauchos figure:hover img
+{
+	transform: rotate(360deg);
+}
+#personalizacion #cauchos figure img,
+#personalizacion #techo figure img
+{
+	max-width: 100%;
+	transition: all 1s ease;
 }
